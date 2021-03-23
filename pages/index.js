@@ -16,7 +16,7 @@ export default function Home() {
 
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Clock &rarr;</h3>
+            <h3>Clock</h3>
             <p>Check out my example for a clock!</p>
           </a>
         </div>
