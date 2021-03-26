@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import React, { FunctionComponent } from "react";
 import styled from "styled-components";
 import { DBItemProps } from "./types";
@@ -24,11 +25,10 @@ const Container = styled.div`
   }
 `;
 
-const Image = styled.img`
-  width: 100%;
-  height: 200px;
+const NextImage = styled(Image)`
   object-fit: cover;
   border-radius: 20px;
+  width: 100%;
 `;
 
 const TextContainer = styled.div`
@@ -66,7 +66,13 @@ const DashboardItem: FunctionComponent<DBItemProps> = ({
   return (
     <Link href={destinationURL}>
       <Container>
-        <Image src={imageURL} alt="pic" />
+        <NextImage
+          src={imageURL}
+          alt="pic"
+          width="auto"
+          height="auto"
+          quality={100}
+        />
         <TextContainer>
           <Title>{title}</Title>
           <SplittingLine />
