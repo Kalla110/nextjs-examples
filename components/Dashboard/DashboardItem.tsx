@@ -6,7 +6,7 @@ import { DBItemProps } from "./types";
 const Container = styled.div`
   display: flex;
   flex: 1;
-  margin: 50px;
+  margin: 5%;
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;

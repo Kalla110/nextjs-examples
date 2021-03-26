@@ -6,15 +6,15 @@ import Dashboard from "../components/Dashboard";
 
 const Home: FunctionComponent = ({}) => {
   return (
-    <div>
-      <Head>
-        <title>Marc's Next Apps</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <PageContainer>
-        <Dashboard />
-      </PageContainer>
-    </div>
+    // <>
+    //   <Head>
+    //     <title>Marc's Next Apps</title>
+    //     <link rel="icon" href="/favicon.ico" />
+    //   </Head>
+    <PageContainer>
+      <Dashboard />
+    </PageContainer>
+    // </>
   );
 };
 

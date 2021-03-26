@@ -9,9 +9,12 @@ body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("../public/static/images/gym-bg.jpg");
   background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   filter: grayscale(1);
   color: white;
   position: relative;
+  overflow: hidden;
 }
 
 a {
@@ -21,8 +24,5 @@ a {
 
 * {
   box-sizing: border-box;
-  scrollbar-width: 0px;
-}
-*::-webkit-scrollbar {
-  display: none;
+  scrollbar-width: none;
 }

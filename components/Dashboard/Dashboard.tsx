@@ -5,9 +5,14 @@ import { DBItemProps } from "./types";
 
 const GridLayout = styled.div`
   display: grid;
-  grid-template-columns: minmax(300px, 400px) 1fr 1fr;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-gap: 10px;
   padding: 20px;
+  @media (max-width: 1100px) {
+    padding: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
 `;
 
 const DashboardItems: DBItemProps[] = [
