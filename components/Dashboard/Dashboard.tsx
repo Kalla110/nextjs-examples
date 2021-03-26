@@ -20,7 +20,7 @@ const DashboardItems: DBItemProps[] = [
     id: "23123",
     title: "Clock",
     description: "Check out my Clock with only HTML and CSS",
-    imageURL: "../static/images/ClockPreview.png",
+    imageURL: "../static/images/clock.png",
     destinationURL: "/clock",
   },
   {
