@@ -1,8 +1,10 @@
 import React, { FunctionComponent } from "react";
 import styled from "styled-components";
+import Navigation from "./Navigation";
 
 const PageBackground = styled.div`
   display: flex;
+  flex-direction: column;
   width: 100%;
   min-height: 100vh;
   justify-content: center;
@@ -20,6 +22,7 @@ const PageContent = styled.div`
 const PageContainer: FunctionComponent = ({ children }) => {
   return (
     <PageBackground>
+      <Navigation />
       <PageContent>{children}</PageContent>
     </PageBackground>
   );

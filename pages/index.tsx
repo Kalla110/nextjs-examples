@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Link from "next/link";
 import { FunctionComponent } from "react";
+import { PageContainer } from "../components";
+import Dashboard from "../components/Dashboard";
 
 const Home: FunctionComponent = ({}) => {
   return (
@@ -9,7 +11,9 @@ const Home: FunctionComponent = ({}) => {
         <title>Marc's Next Apps</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Link href="clock">GO TO CLOCK</Link>
+      <PageContainer>
+        <Dashboard />
+      </PageContainer>
     </div>
   );
 };
