@@ -25,10 +25,10 @@ const DashboardItems: DBItemProps[] = [
   },
   {
     id: "231s23",
-    title: "LOL",
-    description: "Check out my Clock with only HTML and CSS",
-    imageURL: "../static/images/background_main.jpg",
-    destinationURL: "/clock",
+    title: "Calculator",
+    description: "Check out my Calculator with only HTML and CSS",
+    imageURL: "../static/images/calculator.png",
+    destinationURL: "/calculator",
   },
   {
     id: "23asd1s23",

@@ -1,0 +1,1 @@
+export const getArrayOfNumbers: (size: number) => number[] = (size) => Array.from(Array(size).keys());

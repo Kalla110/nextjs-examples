@@ -1,5 +1,6 @@
 import React, { FunctionComponent, useEffect, useMemo, useState } from "react";
 import styled from "styled-components";
+import { getArrayOfNumbers } from "../helper";
 
 const Container = styled.div`
   display: flex;
@@ -70,8 +71,6 @@ const ClockCenterDot = styled.div`
   z-index: 12;
 `;
 
-const numbers: number[] = Array.from(Array(12).keys());
-
 const Clock: FunctionComponent = ({}) => {
   const [currentDate, setCurrentDate] = useState(new Date());
 
@@ -99,7 +98,7 @@ const Clock: FunctionComponent = ({}) => {
   return (
     <Container>
       <ClockBody>
-        {numbers.map((number, index) => (
+        {getArrayOfNumbers(12).map((number, index) => (
           <ClockNumber
             key={`key-${number}-${index}`}
             rotation={(number + 1) * 30}
