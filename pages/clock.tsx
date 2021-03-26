@@ -1,8 +1,13 @@
 import React from "react";
 import { PageContainer } from "../components";
+import Clock from "../components/Clock";
 
-const Clock = () => {
-  return <PageContainer>Hello</PageContainer>;
+const Page = () => {
+  return (
+    <PageContainer>
+      <Clock />
+    </PageContainer>
+  );
 };
 
-export default Clock;
+export default Page;
